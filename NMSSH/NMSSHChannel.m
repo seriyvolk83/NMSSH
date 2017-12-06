@@ -165,6 +165,9 @@
 
         case NMSSHChannelPtyTerminalXterm:
             return "xterm";
+
+        case NMSSHChannelPtyTerminalTN6530_8:
+            return "TN6530-8";
     }
 
     // catch invalid values
