@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, NMSSHChannelType)  {
 /// ----------------------------------------------------------------------------
 
 /** Current channel type or `NMSSHChannelTypeClosed` if the channel is closed */
-@property (nonatomic, readonly) NMSSHChannelType type;
+@property (nonatomic, readwrite) NMSSHChannelType type;
 
 /**
  Create a new NMSSHChannel instance.
