@@ -18,6 +18,8 @@
  */
 - (NSString *)session:(NMSSHSession *)session keyboardInteractiveRequest:(NSString *)request;
 
+- (NSString *)session:(NMSSHSession *)session infoRequest:(NSString *)request;
+
 /**
  Called when a session has failed and disconnected.
 

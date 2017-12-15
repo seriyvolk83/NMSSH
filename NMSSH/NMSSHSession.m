@@ -820,6 +820,10 @@ void kb_callback(const char *name, int name_len, const char *instr, int instr_le
         res[i].text = strdup([response UTF8String]);
         res[i].length = (unsigned int)strlen([response UTF8String]);
     }
+    if(num_prompts == 0) {
+
+        [self.delegate session:self infoRequest:[[NSString alloc] initWithBytes:instr length:instr_len encoding:NSUTF8StringEncoding]];
+    }
 }
 
 void disconnect_callback(LIBSSH2_SESSION *session, int reason, const char *message, int message_len, const char *language, int language_len, void **abstract) {
